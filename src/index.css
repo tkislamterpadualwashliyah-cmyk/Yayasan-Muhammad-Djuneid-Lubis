@@ -1,0 +1,78 @@
+@import "tailwindcss";
+
+@layer base {
+  html {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    scroll-behavior: smooth;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+  }
+}
+
+/* Custom Ken Burns Pan Animation */
+@keyframes kenburns {
+  0% {
+    transform: scale(1) translate(0%, 0%);
+  }
+  50% {
+    transform: scale(1.08) translate(-1.5%, -1%);
+  }
+  100% {
+    transform: scale(1.02) translate(1%, 1.5%);
+  }
+}
+
+.animate-ken-burns {
+  animation: kenburns 22s ease-in-out infinite alternate;
+  will-change: transform;
+}
+
+.animate-ken-burns-slow {
+  animation: kenburns 30s ease-in-out infinite alternate;
+  will-change: transform;
+}
+
+/* Smooth glass effect */
+.glass-header {
+  background: rgba(247, 247, 242, 0.85);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+}
+
+.glass-emerald {
+  background: rgba(6, 78, 59, 0.88);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+/* Custom 32px rounded standard */
+.rounded-32 {
+  border-radius: 32px;
+}
+
+/* Custom scrollbar for clean luxury feel */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #F7F7F2;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #C5A059;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #B88E3E;
+}
+

@@ -1,0 +1,6 @@
+{
+  "name": "Yayasan Muhammad Djuneid Lubis",
+  "description": "Website Resmi Yayasan Muhammad Djuneid Lubis - Membentuk Generasi Unggul, Beradab, dan Berjiwa Qur’ani.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
